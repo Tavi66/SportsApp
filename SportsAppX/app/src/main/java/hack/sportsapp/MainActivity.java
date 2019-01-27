@@ -11,8 +11,6 @@ public class MainActivity extends AppCompatActivity {
 
     public static final String DATABASE_NAME = "usersdb";
 
-    EditText EventName;
-    EditText event, location;
     SQLiteDatabase mDatabase;
 
     @Override
@@ -23,16 +21,17 @@ public class MainActivity extends AppCompatActivity {
         mDatabase = openOrCreateDatabase(DATABASE_NAME, MODE_PRIVATE, null);
     }
 
-    private void addEvent(){}
+    private void addEvent(){
+    }
 
     private void createEventsTable(){
         mDatabase.execSQL(
                 "CREATE TABLE IF NOT EXISTS events (\n" +
-                        " id int NOT NULL PRIMARY KEY, \n" +
-                        " eventName varchar(30) NOT NULL, \n" +
+                        " eventName varchar(30) NOT NULL PRIMARY KEY, \n" +
                         " date datetime NOT NULL, \n" +
-                        " location varchar(45) NOT NULL \n" +
-                ");"
+                        " location varchar(45) NOT NULL \n" + ")" +
+                        ";"
         );
     }
+
 }
