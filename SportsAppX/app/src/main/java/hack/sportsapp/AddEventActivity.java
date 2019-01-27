@@ -1,5 +1,6 @@
 package hack.sportsapp;
 
+import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,13 +38,16 @@ public class AddEventActivity extends AppCompatActivity {
                 //"VALUES(eventName,date,location);";
                 "VALUES\n" + "('" + eventName + "','" + date + "','" + location + "');";
         mDatabase.execSQL(insertSQL);
-
-        //Toast.makeText(this, "Event Added Successfully!", Toast.LENGTH_SHORT);
+        Toast.makeText(this, "Event Added Successfully!", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(AddEventActivity.this, MainActivity.class);
+        startActivity(intent);
+        //
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_event);
+
         //editTextEventName = "Event";
         //eventLocation = "Event";
     }
