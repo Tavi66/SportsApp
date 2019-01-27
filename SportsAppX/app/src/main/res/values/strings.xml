@@ -2,6 +2,11 @@
     <string name="app_name">SportsApp</string>
     <string name="title_activity_login">Sign in</string>
 
+    <string name="nav_home">Home</string>
+    <string name="nav_start">Start</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_Message">Message</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
