@@ -4,10 +4,13 @@
 
     <item
         android:icon="@drawable/baseline_home_black_24dp"
-        android:title="@string/nav_home" />
+        android:title="@string/nav_home"
+        />
+
     <item
         android:icon="@drawable/baseline_add_circle_black_24dp"
-        android:title="@string/nav_start" />
+        android:title="@string/nav_start"
+        />
     <item
         android:icon="@drawable/baseline_account_circle_black_24dp"
         android:title="@string/nav_account" />
